@@ -1,9 +1,4 @@
-#ifndef UTIL_H
-#define UTIL_H
-
-#include <iostream>
-#include <string>
-#include <vector>
+#include "util.hpp"
 
 std::vector<std::string> split(std::string str, char sc) {
     auto strings = std::vector<std::string>();
@@ -42,5 +37,3 @@ double clamp(double val, double min, double max) {
     if (val < min) return min;
     return val;
 }
-
-#endif // UTIL_H
