@@ -68,24 +68,4 @@ std::string trim(std::string string)
     return trimLeft(trimRight(string));
 }
 
-// Clamp a double value.
-double clamp(double val, double min, double max)
-{
-    if (val > max) return max;
-    if (val < min) return min;
-    return val;
-}
-
-// Clamp a float value.
-float clamp(float val, float min, float max)
-{
-    return clamp((double)val, (double)min, (double)max);
-}
-
-// Clamp a int value.
-int clamp(int val, int min, int max)
-{
-    return clamp((float)val, (float)min, (float)max);
-}
-
 #endif // UTIL_H
